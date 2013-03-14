@@ -1,0 +1,6 @@
+[submodule "submod/skeleton"]
+	path = submod/skeleton
+	url = git://github.com/dhgamache/Skeleton.git
+[submodule "submod/jquery-pjax"]
+	path = submod/jquery-pjax
+	url = git://github.com/defunkt/jquery-pjax.git
