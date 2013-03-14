@@ -1,0 +1,18 @@
+body{
+    border-width:0;
+    color:black;
+}
+p, a, ul, li, h1, h2, h3, h4, h5{
+    color:black;
+}
+.topbar .links a{
+    display:none;
+}
+.contentwrap{
+    background-color:white;
+}
+.contentwrap p, li{
+    color:black;
+}
+
+
