@@ -47,6 +47,23 @@ ul, ul li{
 ul li:before{
     content: "\2730 \020";
 }
+h4, h5{
+    font-weight:bold;
+    font-size:14px;
+    line-height:21px;
+    margin:0;
+}
+h4{
+    font-size:16px;
+    font-family: 'Rokkitt', serif;
+    color:#11aea6;
+    line-height:19px;
+}
+h5{
+    margin-bottom:7px;
+    font-family: 'Rokkitt', serif;
+    color: rgb(131, 159, 165);
+}
 
 .topbar{
     margin-top:40px;
@@ -63,7 +80,7 @@ ul li:before{
     padding-top:15px;
     background-color:#f3f8fc
 }
-.contentwrap *{
+.contentwrap p, li{
     color:rgb(86, 117, 124);
 }
 .contentwrap strong{
