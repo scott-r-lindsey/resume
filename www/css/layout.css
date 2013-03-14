@@ -16,6 +16,68 @@
 
 /* #Site Styles
 ================================================== */
+*,p{
+    font-family: 'Rokkitt', serif;
+    color:#230402;
+}
+a{
+    text-decoration:none;
+    font-family: 'Share', cursive;
+}
+a:hover, a:active{
+    text-decoration:underline;
+}
+h1, h2, h3, h4, h5, .topbar .links a{
+    font-family: 'Share', cursive;
+    color:#f6782c;
+}
+body{
+    border-top:6px solid #e0ebed;
+    border-left:4px solid #e0ebed;
+    border-right:4px solid #e0ebed;
+    background-color:white;
+}
+ul, ul li{
+    font-family: 'Rokkitt', serif;
+    line-height:21px;
+    font-size:14px;
+    padding:0;
+    margin:0;
+}
+ul li:before{
+    content: "\2730 \020";
+}
+
+.topbar{
+    margin-top:40px;
+}
+.topbar .links{
+    line-height:50px;
+    text-align:right;
+}
+.topbar .links a{
+    margin-left:40px;
+}
+.contentwrap{
+    margin-top:40px;
+    padding-top:15px;
+    background-color:#f3f8fc
+}
+.contentwrap *{
+    color:rgb(86, 117, 124);
+}
+.contentwrap strong{
+    color:#11aea6;
+}
+.contentwrap .qrbox{
+    text-align:right;
+}
+.contentwrap .qrbox img, .contentwrap .qrbox div{
+    font-height:20px;
+    margin-left:20px;
+    vertical-align:middle;
+}
+
 
 /* #Page Styles
 ================================================== */
