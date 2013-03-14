@@ -89,6 +89,9 @@ h5{
 .contentwrap .qrbox{
     text-align:right;
 }
+.contentwrap a{
+    color: rgb(131, 159, 165);
+}
 .contentwrap .qrbox img, .contentwrap .qrbox div{
     font-height:20px;
     margin-left:20px;
