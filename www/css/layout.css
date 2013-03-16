@@ -97,7 +97,27 @@ h5{
     margin-left:20px;
     vertical-align:middle;
 }
-
+.content{
+    -ms-transition:all 1s ease;
+    -moz-transition:all 1s ease;
+    -webkit-transition:all 1s ease;
+    -o-transition:all 1s ease;
+    transition:all 1s ease;
+    opacity:0;
+    -webkit-transform: matrix(0.290,-0.147,0.131,0.036,244.410,-282.579);
+    -moz-transform: matrix(0.290,-0.147,0.131,0.036,244.410px,-282.579px);
+    -ms-transform: matrix(0.290,-0.147,0.131,0.036,244.410,-282.579);
+    -o-transform: matrix(0.290,-0.147,0.131,0.036,244.410,-282.579);
+    transform: matrix(0.290,-0.147,0.131,0.036,244.410,-282.579);
+}
+.content.visible{
+    opacity:1;
+    -webkit-transform: matrix(1,0,0,1,0,0);
+    -moz-transform: matrix(1,0,0,1,0px,0px);
+    -ms-transform: matrix(1,0,0,1,0,0);
+    -o-transform: matrix(1,0,0,1,0,0);
+    transform: matrix(1,0,0,1,0,0);
+}
 
 /* #Page Styles
 ================================================== */
