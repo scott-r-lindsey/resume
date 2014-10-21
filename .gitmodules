@@ -5,5 +5,5 @@
 	path = submod/jquery-pjax
 	url = git://github.com/defunkt/jquery-pjax.git
 [submodule "fancybox"]
-	path = fancybox
+	path = submod/fancybox
 	url = https://github.com/fancyapps/fancyBox.git
