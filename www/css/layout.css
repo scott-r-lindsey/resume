@@ -90,7 +90,10 @@ h5{
     text-align:right;
 }
 .contentwrap a{
-    color: rgb(131, 159, 165);
+    color: #11aea6;
+    font-size:14px;
+    font-family: 'Rokkitt', serif;
+    font-weight:bold;
 }
 .contentwrap .qrbox img, .contentwrap .qrbox div{
     font-height:20px;
