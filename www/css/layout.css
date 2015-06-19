@@ -121,6 +121,9 @@ h5{
     -o-transform: matrix(1,0,0,1,0,0);
     transform: matrix(1,0,0,1,0,0);
 }
+.container{
+    padding-bottom:40px;
+}
 
 /* #Page Styles
 ================================================== */
@@ -161,3 +164,4 @@ h5{
 	    font-weight: normal;
 	    font-style: normal; }
 */
+
