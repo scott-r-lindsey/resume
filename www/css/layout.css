@@ -17,18 +17,19 @@
 /* #Site Styles
 ================================================== */
 *,p{
-    font-family: 'Rokkitt', serif;
+    font-family: 'Roboto', sans-serif;
     color:#230402;
 }
 a{
     text-decoration:none;
-    font-family: 'Share', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
 }
 a:hover, a:active{
     text-decoration:underline;
 }
 h1, h2, h3, h4, h5, .topbar .links a{
-    font-family: 'Share', cursive;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: 700;
     color:#f6782c;
 }
 body{
@@ -38,7 +39,7 @@ body{
     background-color:white;
 }
 ul, ul li{
-    font-family: 'Rokkitt', serif;
+    font-family: 'Roboto', sans-serif;
     line-height:21px;
     font-size:14px;
     padding:0;
@@ -48,20 +49,20 @@ ul li:before{
     content: "\2730 \020";
 }
 h4, h5{
-    font-weight:bold;
+    font-weight:500;
     font-size:14px;
     line-height:21px;
     margin:0;
 }
 h4{
     font-size:16px;
-    font-family: 'Rokkitt', serif;
+    font-family: 'Roboto', sans-serif;
     color:#11aea6;
     line-height:19px;
 }
 h5{
     margin-bottom:7px;
-    font-family: 'Rokkitt', serif;
+    font-family: 'Roboto', serif;
     color: rgb(131, 159, 165);
 }
 
