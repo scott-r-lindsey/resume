@@ -18,7 +18,7 @@
 ================================================== */
 *,p{
     font-family: 'Roboto', sans-serif;
-    color:#230402;
+    color:#285567;
 }
 a{
     text-decoration:none;
@@ -30,13 +30,13 @@ a:hover, a:active{
 h1, h2, h3, h4, h5, .topbar .links a{
     font-family: 'Roboto Condensed', sans-serif;
     font-weight: 700;
-    color:#f6782c;
+    color:#285567;
 }
 body{
     border-top:6px solid #e0ebed;
     border-left:4px solid #e0ebed;
     border-right:4px solid #e0ebed;
-    background-color:white;
+    background-color:#f3f8fc;
 }
 ul, ul li{
     font-family: 'Roboto', sans-serif;
@@ -72,13 +72,18 @@ h5{
 .topbar .links{
     line-height:50px;
     text-align:right;
+    float:right;
+    padding-right:60px;
 }
 .topbar .links a{
     margin-left:40px;
 }
+.topbar hr{
+    margin: 0 60px;
+}
 .contentwrap{
-    margin-top:40px;
-    padding-top:15px;
+    margin-top:10px;
+    padding-top:0px;
     background-color:#f3f8fc
 }
 .contentwrap p, li{
@@ -90,6 +95,9 @@ h5{
 .contentwrap .qrbox{
     text-align:right;
 }
+.contentwrap .qrbox p{
+    font-size:80%;
+}
 .contentwrap a{
     color: #11aea6;
     font-size:14px;
@@ -100,6 +108,9 @@ h5{
     font-height:20px;
     margin-left:20px;
     vertical-align:middle;
+}
+.contentwrap .container{
+    padding-top:10px;
 }
 .content{
     -ms-transition:all 1s ease;
@@ -124,6 +135,13 @@ h5{
 }
 .container{
     padding-bottom:40px;
+    background-color:white;
+    margin-top:-40px;
+    padding-top:40px;
+}
+.boast{
+    padding-right:60px;
+
 }
 
 /* #Page Styles
