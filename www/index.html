@@ -3,6 +3,29 @@
 <!--[if IE 7 ]><html class="ie ie7" lang="en"> <![endif]-->
 <!--[if IE 8 ]><html class="ie ie8" lang="en"> <![endif]-->
 <!--[if (gte IE 9)|!(IE)]><!--><html lang="en"> <!--<![endif]-->
+
+<!--
+###############################################################################
+
+
+Hi there!
+
+This is my resume.  I'm not primarily a front-end developer these days but I have
+done quite a bit of html/javascript/css during my career, including this resume.
+
+This resume is version controlled here:
+
+https://github.com/scott-r-lindsey/resume
+
+
+Cheers,
+
+Scott
+
+
+
+###############################################################################
+-->
     <head>
 
         <meta charset="utf-8">
@@ -18,12 +41,16 @@
         <link rel="stylesheet" href="css/jquery.fancybox.css">
         <link rel="stylesheet" media="print" href="css/print.css" /> 
 
-        <link href='http://fonts.googleapis.com/css?family=Share:700' rel='stylesheet' type='text/css'>
+        <link href="https://fonts.googleapis.com/css?family=Roboto+Condensed:400,700|Roboto:400,500" rel="stylesheet">
         <link href='http://fonts.googleapis.com/css?family=Rokkitt' rel='stylesheet' type='text/css'>
 
-        <script src="http://code.jquery.com/jquery-1.9.1.min.js"></script>
-        <script src="/js/jquery.pjax.js"></script>
-        <script src="/js/jquery.fancybox.pack.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.pjax/2.0.1/jquery.pjax.min.js"></script>
+
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" />
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.js"></script>
+
         <script src="/js/js.js"></script>
 
         <!--[if lt IE 9]>
@@ -58,65 +85,79 @@
                     <h1 class="remove-bottom">Scott Lindsey</h1>
                 </div>
                 <div class="nine columns omega links">
-                    <a href="/">Resume</a>
+                    <a href="#extras" class="launcher extras">Extras<div class="circle_wrapper"><div class="circle"></div></div></a>
+                    <a href="https://www.linkedin.com/in/scott-lindsey-132471b6/">LinkedIn</a>
                     <a href="https://github.com/scott-r-lindsey/">Github</a>
                     <a href="resume.pdf">PDF</a>
                 </div>
+                <hr />
             </div>
         </div>
 
-        <div class="contentwrap" style="padding-top:40px;">
-            <div class="container">
+        <div class="contentwrap" style="">
+            <div class="main container">
                 <div class="clearfix content">
                     <div class="three column alpha offset-by-one">
-                        <h4>Web Dev / System Admin</h4>
                         <p>
-                            18-41 21st Road<br />
-                            Astoria, NY 11105<br />
+                            8060 Dibble Ave NW<br />
+                            Seattle, WA 98117<br />
                             (646) - 334 - 0819<br />
                             scott@scott.to<br />
                         </p>
                     </div>
                     <div class="ten columns omega links qrbox offset-by-one">
-                        <div style="display:inline-block; height:100%; width:100px; vertical-align:middle;">
-                            <strong>you<br />
-                            are<br />
-                            here</strong>
-                        </div>
                         <img src="/img/qr.png" />
+                        <p>https://resume.scott.to/</p>
                     </div>
                 </div>
 
                 <div class="clearfix content">
-                    <div class="nine column alpha offset-by-one" style="margin-top:20px">
+                    <div class="nine column alpha offset-by-one boast" style="margin-top:20px">
                         <h4>Summary</h4>
                         <ul>
-                            <li>Server: PHP, Perl, RDBMS, NOSQL, Frameworks</li>
-                            <li>Client: HTML5, CSS with Javascript and jQuery</li>
-                            <li>15 Years Web Development Experience and LAMP/SAMP</li>
+                            <li>Linux, Docker, TDD, CI/CD, Cloud Architecture, Deploy and Test Automation</li>
+                            <li>PHP, Terraform, Perl, RDBMS, NOSQL, Framework, Testing and Monitoring</li>
+                            <li>Expierienced Web Development, Linux Admin, Team Leader</li>
                         </ul>
                     </div>
                 </div>
 
                 <div class="clearfix content">
-                    <div class="nine column alpha offset-by-one" style="margin-top:20px">
+                    <div class="nine column alpha offset-by-one boast" style="margin-top:20px">
                         <h4>Skills</h4>
                         <p>
-                            PHP Web development (Symfony2, Cake, Wordpress, Drupal) | Facebook Integration | Git, Subversion |
-                            DB/NoSQL Design and Optimization (MySQL, Oracle, MongoDB, Redis) | Web Servers (Nginx, Apache, Varnish) |
-                            Linux (Red Hat Enterprise, CentOS, Ubuntu) | Linux Networking and VPN | HTML5 CSS, Less | 
-                            jQuery, jQuery Mobile, Handlebars | AWS: EC2, Route 53, AutoScaling, CodeDeploy w/Github, S3, SNS, AWS cli, SES
+                            CI/CD: CircleCI/Jenkins workflows, automated releases with Terraform
+                            PHP Web development (Symfony, Slim, Cake, Wordpress, Drupal) | Facebook Integration | Git, Subversion |
+                            DB/NoSQL Design and Optimization (MySQL, Postgres, Oracle, MongoDB, Redis, DynamoDB) | Web Servers (NGINX, Apache, Varnish) |
+                            Linux (Red Hat Enterprise, CentOS, Ubuntu, Alpine) | Linux Networking and VPN | HTML5 CSS, Less |
+                            jQuery, jQuery Mobile, Handlebars | AWS: Infrastructure as code solution architecture
                         </p>
                     </div>
                 </div>
 
                 <div class="clearfix content">
-                    <div class="nine column alpha offset-by-one" style="margin-top:20px">
+                    <div class="nine column alpha offset-by-one boast" style="margin-top:20px">
+                        <h4>McGraw-Hill Education</h4>
+                        <h5>Senior Software Engineer (lead developer)</h5>
+                        <p>
+                            August 2015 to December 2018<br />
+                            The team I lead at MHE Seattle is responsible for creating and maintaining RESTful APIs and workers that are
+                            primarily concerned with ingestion, manipulation and distribution of authored ePub content (textbooks) and serving that content
+                            to both authors and students.  As a team, we created a stable of dockerized products written mainly in PHP (Slim and Symfony),
+                            each released via CI/CD (CircleCI) with IAC (Terraform) to AWS ECS EC2/Fargate and Lambda (NodeJS) and other AWS
+                            technologies.  As a team, we have attempted (and sometimes succeeded) in driving adoption of best practices within
+                            the organization.
+                        </p>
+                    </div>
+                </div>
+
+                <div class="clearfix content">
+                    <div class="nine column alpha offset-by-one boast" style="margin-top:0px">
                         <h4>BookSta.sh</h4>
                         <h5>Proprietor</h5>
                         <p>
-                            <a href="http://Booksta.sh">Booksta.sh</a> is a site for book discovery, currently hosting over a million books.  
-                            Booksta.sh is a side project which has allowed me to try out new ideas and explore aspects of the creative 
+                            Booksta.sh was a site for book discovery, currently hosting over a million books.
+                            Booksta.sh is a side project which has allowed me to try out new ideas and explore aspects of the creative
                             process that I have not been a part of before.
                             I'm very proud of it and I hope you'll take a look at it.
                         </p>
@@ -124,7 +165,7 @@
                 </div>
 
                 <div class="clearfix content">
-                    <div class="nine column alpha offset-by-one" style="margin-top:0px">
+                    <div class="nine column alpha offset-by-one boast" style="margin-top:0px">
                         <h4>HarperCollins Publisher</h4>
                         <h5>Senior Web Developer</h5>
                         <p>
@@ -142,7 +183,7 @@
                 </div>
 
                 <div class="clearfix content">
-                    <div class="nine column alpha offset-by-one" style="margin-top:0px">
+                    <div class="nine column alpha offset-by-one boast" style="margin-top:0px">
                         <h4>Random House Incorporated</h4>
                         <h5>Senior Program Analyst, Web Development</h5>
                         <p>
@@ -153,7 +194,7 @@
                 </div>
 
                 <div class="clearfix content">
-                    <div class="nine column alpha offset-by-one" style="margin-top:0px">
+                    <div class="nine column alpha offset-by-one boast" style="margin-top:0px">
                         <h4>Digital Exchange (DX.com)</h4>
                         <h5>Web Developer / System Administrator / Digital Pre-Press Specialist</h5>
                         <p>
@@ -164,7 +205,7 @@
                 </div>
 
                 <div class="clearfix content">
-                    <div class="nine column alpha offset-by-one" style="margin-top:0px">
+                    <div class="nine column alpha offset-by-one boast" style="margin-top:0px">
                         <h4>Sam Flax Computer Services</h4>
                         <h5>Computer Technician / Digital Pre-Press Specialist </h5>
                         <p>
@@ -176,5 +217,35 @@
 
             </div>
         </div>
+
+        <div class="slideshow_scaffold teased">
+            <div class="slideshow_shape">
+                <div class="content slides">
+                    <div>
+                        <iframe width="960" height="600" src="https://www.youtube.com/embed/GXA7H3EP-X8" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div>
+                        <iframe width="960" height="600" src="https://www.youtube.com/embed/Pty-TWPQ5eI" frameborder="0" allowfullscreen></iframe>
+                    </div>
+                    <div><img data-u="image" src="https://picsum.photos/500/600" /></div>
+                    <div><img data-u="image" src="https://picsum.photos/600/600" /></div>
+                </div>
+                <a class="close">Close</p>
+            </div>
+        </div>
+<!--
+        <a data-fancybox="gallery" href="g"><img src="https://picsum.photos/500/600"></a>
+        <a data-fancybox="gallery" href="big_1.jpg"><img src="https://picsum.photos/600/600"></a>
+
+        <div id="slide_holder_outer">
+            <div id="slide_holder">
+                <div id="slider">
+                    <div class="slides">
+                    </div>
+                </div>
+            </div>
+        </div>
+-->
+
     </body>
 </html>
