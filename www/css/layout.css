@@ -57,7 +57,7 @@ h4, h5{
 h4{
     font-size:16px;
     font-family: 'Roboto', sans-serif;
-    color:#11aea6;
+    color:#086762;
     line-height:19px;
 }
 h5{
@@ -141,7 +141,126 @@ h5{
 }
 .boast{
     padding-right:60px;
+}
 
+
+/* circle zoom thing
+-------------------------------------------------- */
+.launcher{
+   position:relative;
+}
+.circle_wrapper{
+   position:absolute;
+   top:0;
+   left:0;
+}
+.circle_wrapper .circle{
+   position:absolute;
+   top:-2490px;
+   left:-2460px;
+   display:block;
+   height: 5000px;
+   width: 5000px;
+   background-color: #11aea6;
+   border-radius: 50%;
+   display:none;
+   z-index:1000;
+}
+.circle_wrapper.shrunk .circle{
+   display:block;
+   animation: shrinkDown .5s;
+   transform: scale(0);
+}
+.circle_wrapper.expanded .circle{
+   display:block;
+   animation: growUp 1s;
+}
+@keyframes growUp {
+  0%  { transform: scale(0); }
+  100% { transform: scale(1); }
+}
+@keyframes shrinkDown {
+  0%  { transform: scale(1); }
+  100% { transform: scale(0); }
+}
+
+
+/* slideshow
+-------------------------------------------------- */
+.slideshow_scaffold{
+    display:none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index:1001;
+}
+.slideshow_scaffold.teased{
+    display:block;
+    opacity:.01;
+}
+.slideshow_scaffold.visible{
+    display:block;
+}
+.slideshow_shape{
+    position: relative;
+    top: 50%;
+    transform: perspective(1px) translateY(-50%);
+}
+.slideshow_shape:before{
+    display: block;
+    content: "";
+    width: 100%;
+    padding-top: 64.25%;
+}
+.slideshow_shape .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    text-align:center;
+}
+.slideshow_shape .content button{
+    z-index:1500;
+    width:40px;
+    height:40px;
+}
+.slideshow_shape .content button.slick-prev:before, .slideshow_shape .content button.slick-next:before{
+    font-size:40px;
+    box-shadow: 2px 2px 26px 0px rgba(0,0,0,0.60);
+    border-radius:20px;
+    background-color:rgba(0,0,0,0.4);
+}
+.slideshow_shape .content button.slick-prev{
+    left:5%;
+}
+.slideshow_shape .content button.slick-next{
+    right:5%;
+}
+.slideshow_shape .content button{
+}
+.slideshow_shape .close{
+    position:absolute;
+    top:100%;
+    right:5%;
+    color:white;
+    font-size:30px;
+    font-weight:bold;
+}
+.slideshow_shape .close:hover{
+    text-decoration:underline;
+}
+.slick-dots li button:before{
+    color:white;
+}
+
+
+/* maybe the extras feels like trying too hard
+================================================== */
+.extras{
+    display:none;
 }
 
 /* #Page Styles
