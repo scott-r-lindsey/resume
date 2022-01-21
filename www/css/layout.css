@@ -33,7 +33,6 @@ h1, h2, h3, h4, h5, .topbar .links a{
     color:#285567;
 }
 body{
-    border-top:6px solid #e0ebed;
     border-left:4px solid #e0ebed;
     border-right:4px solid #e0ebed;
     background-color:#f3f8fc;
@@ -104,7 +103,6 @@ h5{
     font-weight:bold;
 }
 .contentwrap .qrbox img, .contentwrap .qrbox div{
-    font-height:20px;
     margin-left:20px;
     vertical-align:middle;
 }
@@ -254,6 +252,11 @@ h5{
 .slick-dots li button:before{
     color:white;
 }
+.qrbox{
+    position:absolute;
+    top:0px;
+    right:50px;
+}
 
 
 /* maybe the extras feels like trying too hard
@@ -265,23 +268,50 @@ h5{
 /* #Page Styles
 ================================================== */
 
+.summary{
+    margin-top: 20px;
+}
+
 /* #Media Queries
 ================================================== */
 
 	/* Smaller than standard 960 (devices and browsers) */
-	@media only screen and (max-width: 959px) {}
+	@media only screen and (max-width: 959px) {
+        .container{
+            width:90vw;
+        }
+        .container .offset-by-one {
+            padding-left:2vw;
+            padding-right:2vw;
+        }
+        .topbar hr{
+            margin: 0 2vw;
+        }
+    }
 
 	/* Tablet Portrait size to standard 960 (devices and browsers) */
 	@media only screen and (min-width: 768px) and (max-width: 959px) {}
 
 	/* All Mobile Sizes (devices and browser) */
-	@media only screen and (max-width: 767px) {}
+	@media only screen and (max-width: 767px) {
+        .contentwrap .qrbox{
+            display:none;
+        }
+        .summary{
+            margin-top: 10px;
+        }
+    }
 
 	/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-	@media only screen and (min-width: 480px) and (max-width: 767px) {}
+	@media only screen and (min-width: 480px) and (max-width: 767px) {
+    }
 
 	/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-	@media only screen and (max-width: 479px) {}
+	@media only screen and (max-width: 479px) {
+        p{
+            color:red;
+        }
+    }
 
 
 /* #Font-Face
